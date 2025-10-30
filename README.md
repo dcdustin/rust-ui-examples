@@ -1,6 +1,6 @@
 ## Rust UI Tests
 
-Dead simple plugin for reading JSON files into CUI. This plugin is intended to run on a development server, and assumes you are the only player. It will display/destroy UI components to 
+Dead simple plugin for reading JSON files into CUI. This plugin is intended to run on a development server, and assumes you are the only player. It will display/destroy UI components for `BasePlayer.activePlayerList[0]`.
 
 ### Install
 
