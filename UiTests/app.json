@@ -1,0 +1,216 @@
+[
+    {
+        "name": "UiRootPanel",
+        "parent": "Overlay",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0.1019 0.1059 0.0980 0.8549", "material": "assets/content/ui/uibackgroundblur-ingamemenu.mat" },
+            { "type": "NeedsCursor" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "0 0", "offsetmax": "0 0" }
+        ]
+    },
+    {
+        "name": "AppPanel",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0.1333 0.1333 0.1333 1" },
+            { "type": "RectTransform", "anchormin": "0.5 0.5", "anchormax": "0.5 0.5", "offsetmin": "-550 -300", "offsetmax": "550 300" },
+            {
+                "type": "UnityEngine.UI.VerticalLayoutGroup",
+                "spacing": 0,
+                "childAlignment": "UpperLeft",
+                "childForceExpandWidth": false,
+                "childForceExpandHeight": false,
+                "childControlWidth": true,
+                "childControlHeight": true,
+                "padding": "0 0 0 0"
+            }
+        ]
+    },
+    {
+        "name": "titlebar",
+        "parent": "AppPanel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 1100, "flexibleWidth": true, "preferredHeight": 36, "flexibleHeight": false },
+            { "type": "UnityEngine.UI.Image", "color": "0.0980 0.0980 0.0980 1" }
+        ]
+    },
+    {
+        "name": "titlebarLabel",
+        "parent": "titlebar",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "10 0", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.Text", "text": "APPLICATION TITLE", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleLeft", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "titlebarClose",
+        "parent": "titlebar",
+        "components": [
+            { "type": "UnityEngine.UI.Button", "close": "UiRootPanel", "color": "0.6667 0.2784 0.2078 1" },
+            { "type": "RectTransform", "anchormin": "1 0", "anchormax": "1 1", "offsetmin": "-30 6", "offsetmax": "-6 -6" }
+        ]
+    },
+    {
+        "name": "titlebarCloseIcon",
+        "parent": "titlebarClose",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "1 1 1 0.8", "sprite": "assets/icons/close.png" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "5 5", "offsetmax": "-5 -5" }
+        ]
+    },
+    {
+        "name": "AppContent",
+        "parent": "AppPanel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 1100, "flexibleWidth": false, "preferredHeight": 564, "flexibleHeight": true },
+            { "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 0.005" }
+        ]
+    },
+
+    {
+        "name": "AppContentCards",
+        "parent": "AppContent",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0.0376 0.0376 0.0376 1" },
+            { "type": "RectTransform", "anchormin": "0 1", "anchormax": "1 1", "offsetmin": "0 -118", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.HorizontalLayoutGroup", "childAlignment": "MiddleCenter", "spacing": 20, "childForceExpandHeight": false, "childForceExpandWidth": false, "childControlWidth": true, "childControlHeight": true, "padding": "20 10 20 10" }
+        ]
+    },
+    {
+        "name": "AppCardsLayoutOne",
+        "parent": "AppContentCards",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 400, "preferredHeight": 120 },
+            { "type": "UnityEngine.UI.Image", "color": "0.3647059 0.4470588 0.2196078 1" }
+        ]
+    },
+    {
+        "name": "cardOne",
+        "parent": "AppCardsLayoutOne",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 1", "anchormax": "1 1", "offsetmin": "0 -60", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.Text", "text": "Card One Focus", "fontSize": 32, "font": "RobotoCondensed-Bold.ttf", "align": "LowerCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "cardOneMore",
+        "parent": "AppCardsLayoutOne",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 0", "offsetmin": "0 0", "offsetmax": "0 40" },
+            { "type": "UnityEngine.UI.Text", "text": "Card One Additional", "fontSize": 18, "font": "RobotoCondensed-regular.ttf", "align": "UpperCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "AppCardsLayoutTwo",
+        "parent": "AppContentCards",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 400, "preferredHeight": 120 },
+            { "type": "UnityEngine.UI.Image", "color": "0.3647059 0.4470588 0.2196078 1" }
+        ]
+    },
+    {
+        "name": "cardTwo",
+        "parent": "AppCardsLayoutTwo",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 1", "anchormax": "1 1", "offsetmin": "0 -60", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.Text", "text": "Card Two Focus", "fontSize": 32, "font": "RobotoCondensed-Bold.ttf", "align": "LowerCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "cardTwoMore",
+        "parent": "AppCardsLayoutTwo",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 0", "offsetmin": "0 0", "offsetmax": "0 40" },
+            { "type": "UnityEngine.UI.Text", "text": "Card Two Additional", "fontSize": 18, "font": "RobotoCondensed-regular.ttf", "align": "UpperCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "AppCardsLayoutThree",
+        "parent": "AppContentCards",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 400, "preferredHeight": 120 },
+            { "type": "UnityEngine.UI.Image", "color": "0.3647059 0.4470588 0.2196078 1" }
+        ]
+    },
+    {
+        "name": "cardThree",
+        "parent": "AppCardsLayoutThree",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 1", "anchormax": "1 1", "offsetmin": "0 -60", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.Text", "text": "Card Three Focus", "fontSize": 32, "font": "RobotoCondensed-Bold.ttf", "align": "LowerCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "cardThreeMore",
+        "parent": "AppCardsLayoutThree",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 0", "offsetmin": "0 0", "offsetmax": "0 40" },
+            { "type": "UnityEngine.UI.Text", "text": "Card Three Additional", "fontSize": 18, "font": "RobotoCondensed-regular.ttf", "align": "UpperCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "AppCardsLayoutFour",
+        "parent": "AppContentCards",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 400, "preferredHeight": 120 },
+            { "type": "UnityEngine.UI.Image", "color": "0.3647059 0.4470588 0.2196078 1" }
+        ]
+    },
+    {
+        "name": "cardFour",
+        "parent": "AppCardsLayoutFour",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 1", "anchormax": "1 1", "offsetmin": "0 -60", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.Text", "text": "Card Four Focus", "fontSize": 32, "font": "RobotoCondensed-Bold.ttf", "align": "LowerCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "cardFourMore",
+        "parent": "AppCardsLayoutFour",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 0", "offsetmin": "0 0", "offsetmax": "0 40" },
+            { "type": "UnityEngine.UI.Text", "text": "Card Four Additional", "fontSize": 18, "font": "RobotoCondensed-regular.ttf", "align": "UpperCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "AppContentActions",
+        "parent": "AppContent",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0.0376 0.0376 0.0376 1" },
+            { "type": "RectTransform", "anchormin": "0 1", "anchormax": "1 1", "offsetmin": "0 -155", "offsetmax": "0 -125" },
+            { "type": "UnityEngine.UI.LayoutGroup", "preferredWidth": 90, "minWidth": 60 }
+        ]
+    },
+    {
+        "name": "toggActiveSelf",
+        "parent": "AppContentActions",
+        "components": [
+            { "type": "UnityEngine.UI.Button", "command": "uitests.toggleas", "color": "0.3647059 0.4470588 0.2196078 1" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "0 1", "offsetmin": "0 0", "offsetmax": "30 0" }
+        ]
+    },
+    {
+        "name": "toggActiveSelfIcon",
+        "parent": "toggActiveSelf",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "1 1 1 0.8", "sprite": "assets/icons/clear.png" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "5 5", "offsetmax": "-5 -5" }
+        ]
+    },
+    {
+        "name": "CloseButton",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Button", "close": "UiRootPanel", "color": "0.666 0.278 0.208 1" },
+            { "type": "RectTransform", "anchormin": "1 1", "anchormax": "1 1", "offsetmin": "-32 -32", "offsetmax": "-8 -8" }
+        ]
+    },
+    {
+        "name": "CloseButtonIcon",
+        "parent": "CloseButton",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "1 1 1 0.8", "sprite": "assets/icons/close.png" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "0 1", "offsetmin": "5 5", "offsetmax": "20 -5" }
+        ]
+    }
+]

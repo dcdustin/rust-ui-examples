@@ -1,0 +1,57 @@
+[
+    {
+        "name": "UiRootPanel",
+        "parent": "Overlay",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.18" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "0 0", "offsetmax": "0 0" }
+        ]
+    },
+    {
+        "name": "V_Panel",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.18" },
+            { "type": "RectTransform", "anchormin": "0.4 0.22", "anchormax": "0.6 0.72", "offsetmin": "0 0", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.VerticalLayoutGroup", "spacing": 14, "childAlignment": "MiddleCenter", "childForceExpandWidth": false, "childForceExpandHeight": false, "childControlWidth": true, "childControlHeight": true, "padding": "12 12 12 12" }
+        ]
+    },
+
+
+    /* START YOUR UI HERE */
+    {
+        "name": "V_Item_1",
+        "parent": "V_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 320, "preferredHeight": 52 },
+            { "type": "UnityEngine.UI.Image", "color": "0.2 0.6 1 0.9" }
+        ]
+    },
+    {
+        "name": "V_Item_1_Label",
+        "parent": "V_Item_1",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Line 1", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+    /* END YOUR UI HERE */
+
+
+    {
+        "name": "CloseButton",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Button", "close": "UiRootPanel", "color": "0.666 0.278 0.208 1" },
+            { "type": "RectTransform", "anchormin": "1 1", "anchormax": "1 1", "offsetmin": "-32 -32", "offsetmax": "-8 -8" }
+        ]
+    },
+    {
+        "name": "CloseButtonIcon",
+        "parent": "CloseButton",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "1 1 1 0.8", "sprite": "assets/icons/close.png" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "0 1", "offsetmin": "5 5", "offsetmax": "20 -5" }
+        ]
+    }
+]

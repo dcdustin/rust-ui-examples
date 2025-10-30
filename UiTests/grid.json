@@ -1,0 +1,136 @@
+[
+    {
+        "name": "UiRootPanel",
+        "parent": "Overlay",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.1" },
+            { "type": "NeedsCursor" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "0 0", "offsetmax": "0 0" }
+        ]
+    },
+    {
+        "name": "G_Panel",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.95", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" },
+            { "type": "RectTransform", "anchormin": "0.5 0.5", "anchormax": "0.5 0.5", "offsetmin": "-420 -128", "offsetmax": "420 128" },
+            { "type": "UnityEngine.UI.GridLayoutGroup", "cellSize": "200 75", "spacing": "8 8", "startCorner": "UpperLeft", "startAxis": "Horizontal", "childAlignment": "MiddleCenter", "constraint": "FixedColumnCount", "constraintCount": 4, "padding": "0 0 0 0" }
+        ]
+    },
+
+    { "name": "G_Item_1", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_1_Label",
+        "parent": "G_Item_1",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 1", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_2", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_2_Label",
+        "parent": "G_Item_2",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 2", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_3", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_3_Label",
+        "parent": "G_Item_3",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 3", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_4", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_4_Label",
+        "parent": "G_Item_4",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 4", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_5", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_5_Label",
+        "parent": "G_Item_5",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 5", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_6", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_6_Label",
+        "parent": "G_Item_6",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 6", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_7", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_7_Label",
+        "parent": "G_Item_7",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 7", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_8", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_8_Label",
+        "parent": "G_Item_8",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 8", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_9", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_9_Label",
+        "parent": "G_Item_9",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 9", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    { "name": "G_Item_10", "parent": "G_Panel", "components": [{ "type": "UnityEngine.UI.Image", "color": "0.3647 0.4471 0.2196 1", "sprite": "assets/content/ui/ui.background.rounded.png", "imagetype": "Sliced" }] },
+    {
+        "name": "G_Item_10_Label",
+        "parent": "G_Item_10",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 6", "offsetmax": "-8 -6" },
+            { "type": "UnityEngine.UI.Text", "text": "Items 10", "fontSize": 16, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "CloseButton",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Button", "close": "UiRootPanel", "color": "0.666 0.278 0.208 1" },
+            { "type": "RectTransform", "anchormin": "1 1", "anchormax": "1 1", "offsetmin": "-32 -32", "offsetmax": "-8 -8" }
+        ]
+    },
+    {
+        "name": "CloseButtonIcon",
+        "parent": "CloseButton",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "1 1 1 0.8", "sprite": "assets/icons/close.png" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "0 1", "offsetmin": "5 5", "offsetmax": "20 -5" }
+        ]
+    }
+]

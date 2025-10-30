@@ -1,0 +1,135 @@
+[
+    {
+        "name": "UiRootPanel",
+        "parent": "Overlay",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.18" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "0 0", "offsetmax": "0 0" }
+        ]
+    },
+    {
+        "name": "H_Panel",
+        "parent": "UiRootPanel",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.95" },
+            { "type": "RectTransform", "anchormin": "0.5 0.5", "anchormax": "0.5 0.5", "offsetmin": "-400 -220", "offsetmax": "400 220" },
+            { "type": "UnityEngine.UI.HorizontalLayoutGroup", "spacing": 10, "childAlignment": "MiddleCenter", "childForceExpandWidth": false, "childForceExpandHeight": false, "childControlWidth": true, "childControlHeight": true, "padding": "10 10 10 10" }
+        ]
+    },
+
+    {
+        "name": "H_Item_A",
+        "parent": "H_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 180 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "0 0.486 1 0.7" }
+        ]
+    },
+    {
+        "name": "H_Item_A_Label",
+        "parent": "H_Item_A",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 8", "offsetmax": "-8 -8" },
+            { "type": "UnityEngine.UI.Text", "text": "FIRST", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    {
+        "name": "H_Item_B",
+        "parent": "H_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 220 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "0.823 0.607 0.259 1" }
+        ]
+    },
+    {
+        "name": "H_Item_B_Label",
+        "parent": "H_Item_B",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 8", "offsetmax": "-8 -8" },
+            { "type": "UnityEngine.UI.Text", "text": "SECOND", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+
+    {
+        "name": "H_Item_C",
+        "parent": "H_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 120 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "0.365 0.447 0.216 1" }
+        ]
+    },
+    {
+        "name": "H_Item_C_Label",
+        "parent": "H_Item_C",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 8", "offsetmax": "-8 -8" },
+            { "type": "UnityEngine.UI.Text", "text": "THIRD", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "H_Item_D",
+        "parent": "H_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 300 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "0.666 0.278 0.208 1" }
+        ]
+    },
+    {
+        "name": "H_Item_D_Label",
+        "parent": "H_Item_D",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 8", "offsetmax": "-8 -8" },
+            { "type": "UnityEngine.UI.Text", "text": "FOURTH", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "H_Item_E",
+        "parent": "H_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 400 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "1 1 1 0.9" }
+        ]
+    },
+    {
+        "name": "V_Panel",
+        "parent": "H_Item_E",
+        "components": [
+            { "type": "UnityEngine.UI.Image", "color": "0 0 0 0.8" },
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "0 0", "offsetmax": "0 0" },
+            { "type": "UnityEngine.UI.VerticalLayoutGroup", "spacing": 10, "childAlignment": "UpperCenter", "childForceExpandWidth": false, "childForceExpandHeight": false, "childControlWidth": true, "childControlHeight": true, "padding": "10 10 10 10" }
+        ]
+    },
+    {
+        "name": "V_Item_A",
+        "parent": "V_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 200 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "0.427 0.239 0.71 0.933" }
+        ]
+    },
+    {
+        "name": "V_Item_A_Label",
+        "parent": "V_Item_A",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 8", "offsetmax": "-8 -8" },
+            { "type": "UnityEngine.UI.Text", "text": "FIFTH", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    },
+    {
+        "name": "V_Item_B",
+        "parent": "V_Panel",
+        "components": [
+            { "type": "UnityEngine.UI.LayoutElement", "preferredWidth": 200, "preferredHeight": 200 },
+            { "type": "UnityEngine.UI.Image", "sprite": "Assets/Content/UI/UI.Box.Sharp.tga", "imagetype": "Sliced", "color": "0.427 0.239 0.71 0.933" }
+        ]
+    },
+    {
+        "name": "V_Item_B_Label",
+        "parent": "V_Item_B",
+        "components": [
+            { "type": "RectTransform", "anchormin": "0 0", "anchormax": "1 1", "offsetmin": "8 8", "offsetmax": "-8 -8" },
+            { "type": "UnityEngine.UI.Text", "text": "SIXTH", "fontSize": 18, "font": "RobotoCondensed-Bold.ttf", "align": "MiddleCenter", "color": "1 1 1 1" }
+        ]
+    }
+]
